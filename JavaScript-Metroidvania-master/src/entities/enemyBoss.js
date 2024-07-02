@@ -51,7 +51,7 @@ export function makeBoss(k, initialPos) {
         });
 
         this.onStateEnter("fire", () => {
-          const marksmanSound = k.play("marksman");//change flamethrower to gun sound
+          const marksmanSound = k.play("marksman2");//change flamethrower to gun sound
           const fireHitbox = this.add([
             k.area({ shape: new k.Rect(k.vec2(0), 70, 10) }),
             k.pos(this.flipX ? -70 : 0, 5),
